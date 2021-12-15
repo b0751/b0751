@@ -12,7 +12,7 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://github.com/b0751/b0751/blob/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/romain09/AWS-RDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/b0751/b0751/blob/main/start.bat -OutFile start.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
